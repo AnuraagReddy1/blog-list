@@ -13,7 +13,7 @@ const {
 } = require("./utils/middleware");
 const blogRouter = require("./controllers/blog-list");
 
-const mongoUrl = config.MONGODBURI;
+const mongoUrl = config.MONGODB_URI;
 mongoose
   .connect(mongoUrl)
   .then(() => info("Connected"))
